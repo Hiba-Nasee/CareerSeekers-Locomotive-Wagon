@@ -1,0 +1,2079 @@
+---
+title: Indigenous Cadetship Support Sponsor Agreement
+slug: ics-sponsor-agreement
+listed: false
+published: true
+cache_strategy: none
+response_type: text/html
+position: 103
+seo_title: Indigenous Cadetship Support Sponsor Agreement
+---
+{% extends parent %}
+{% block main %}
+<div class='container-fluid'>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	  	$(document).ready(function(){
+    		$('input').keyup(function(){
+        		if($(this).val().length==$(this).attr("maxlength")){
+            		$(this).next().focus();
+        		}
+    		});
+		});
+
+	</script>
+  <!--{% include page_header %}-->
+  <div class="page-header orange-dotted-border-bottom">
+  <div class='fb-like pull-right visible-lg' data-action='like' data-href='https://facebook.com/CareerTrackers' data-layout='button_count' data-share='true' data-show-faces='true'></div>
+  <h1>
+  	Indigenous Cadetship Support <br>
+  	Sponsor Agreement
+  </h1>
+  </div>
+  <div class="padded-bottom"> </div>
+  <div class='progress'>
+    <div aria-valuemax='100' aria-valuemin='0' aria-valuenow='20' class='progress-bar' role='progressbar' style='width: 20%;'>
+      <span class='sr-only'>20% Complete</span>
+    </div>
+  </div>
+  <form id='ics_sponsor_form' action='/interns/ics' class='form-horizontal' method='POST' novalidate='novalidate' role='form'>
+    {% assign intern = session['intern'] %}
+    {% csrf_param %}
+    <!-- Will be hidden until Cadet Details -->
+	
+	
+	<div class = "hide-form">
+	<div class=' col-sm-12 padded-top padded-bottom light-background '>
+			<p> Indigenous Cadetship Support (ICS) is an Australian Government initiative that aims to improve the professional employment prospects of Indigenous 
+				Australians. ICS enables Indigenous tertiary students to gain professional qualifications and experience and move into employment on completion of 
+				their studies.
+				<br>
+				<br>
+				<strong>Privacy Statement</strong><br>
+				<br>
+				The Department of the Prime Minister and Cabinet uses the information collected on this form to make decisions relating to the participation of both the
+				Sponsor and the Cadet in ICS. The Department also uses this information for Cadetship placement, administration (including debt recovery and 
+				monitoring of performance under this Agreement), research, evaluation and monitoring purposes. The Sponsor and its agents and the Cadet consent to
+				the collection and use of their Personal Information and Sensitive Information in this Agreement for these purposes. The Department undertakes to use
+				all reasonable endeavours to ensure that any publication produced as a result of research or evaluation of ICS that uses the information in this
+				Agreement is drafted to protect the identity of the Sponsor, its agents and the Cadet.
+			</p>
+			
+			
+		</div>
+		<h3>
+			Item 1 - Business Details - Sponsor
+		</h3>
+		<hr>
+		<div class='light-background padded-top padded-bottom'>
+    		<fieldset>
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='legal_registered_name'>
+          				Legal Registered name
+          			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='legal_registered_name' name='ics[legal_registered_name]' readonly='' type='text' value='CareerTrackers Indigenous Internship Program Ltd'>
+          			</div>
+        		</div>
+    
+        		<div class='form-group'>
+        			<label class='col-sm-3 control-label' for='trading_name'>
+            			Trading Name
+            		<div class='small normal-font-weight'>
+              			(if different to registered)
+            		</div>
+        			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='trading_name' name='ics[trading_name]' readonly='' type='text' value='CareerTrackers Indigenous Program'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='business_ics_id_1'>ICS ID</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' id='business_ics_id_1' maxlength='1' name='ics[business_ics_id_1]' readonly='' type='text' value='1'>
+              				<input class='digit-box form-control' id='business_ics_id_2' maxlength='1' name='ics[business_ics_id_2]' readonly='' type='text' value='3'>
+              				<input class='digit-box form-control' id='business_ics_id_3' maxlength='1' name='ics[business_ics_id_3]' readonly='' type='text' value='0'>
+              				<input class='digit-box form-control' id='business_ics_id_4' maxlength='1' name='ics[business_ics_id_4]' readonly='' type='text' value='8'>
+              				<input class='digit-box form-control' id='business_ics_id_5' maxlength='1' name='ics[business_ics_id_5]' readonly='' type='text' value='0'>
+              				<input class='digit-box form-control' id='business_ics_id_6' maxlength='1' name='ics[business_ics_id_6]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='business_ics_id_7' maxlength='1' name='ics[business_ics_id_7]' readonly='' type='text' value=''>
+            			</div>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group no-margin-bottom'>
+          			<label class='col-sm-3 control-label' for='registered_business_address_1'>
+            			Registered Business Address
+            			<div class='small normal-font-weight'>
+              				Street & Postal Address
+           				</div>
+          			</label>
+          			<div class='col-sm-5 input-vertical-group'>
+            			<input class='form-control' id='registered_business_address_1' name='ics[registered_business_address_1]' type='text' readonly='' value="Suite 1, Level 5, 309 George Street">
+            			<input class='form-control' id='registered_business_address_2' name='ics[registered_business_address_2]' type='text' readonly='' value="Sydney">
+            			<input class='form-control' id='registered_business_address_3' name='ics[registered_business_address_3]' type='text' readonly='' value="NSW">
+          			</div>
+        		</div>
+        		<div class='form-group'>
+          			<label class='small col-sm-3 control-label' for='registered_post_1'>Postcode</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' maxlength='1' name='ics[registered_post_1]' readonly='' type='text' value="2">
+              				<input class='digit-box form-control' maxlength='1' name='ics[registered_post_2]' readonly='' type='text' value="0">
+              				<input class='digit-box form-control' maxlength='1' name='ics[registered_post_3]' readonly='' type='text' value="0">
+              				<input class='digit-box form-control' maxlength='1' name='ics[registered_post_4]' readonly='' type='text' value="0">
+            			</div>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='ABN_1'>
+          				Australian Business Number (ABN)
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' id='ABN_1' maxlength='1' name='ics[ABN_1]' readonly='' type='text' value='6'>
+              				<input class='digit-box form-control' id='ABN_2' maxlength='1' name='ics[ABN_2]' readonly='' type='text' value='7'>
+              				<input class='digit-box form-control' id='ABN_3' maxlength='1' name='ics[ABN_3]' readonly='' type='text' value='1'>
+              				<input class='digit-box form-control' id='ABN_4' maxlength='1' name='ics[ABN_4]' readonly='' type='text' value='4'>
+              				<input class='digit-box form-control' id='ABN_5' maxlength='1' name='ics[ABN_5]' readonly='' type='text' value='0'>
+              				<input class='digit-box form-control' id='ABN_6' maxlength='1' name='ics[ABN_6]' readonly='' type='text' value='2'>
+              				<input class='digit-box form-control' id='ABN_7' maxlength='1' name='ics[ABN_7]' readonly='' type='text' value='8'>
+              				<input class='digit-box form-control' id='ABN_8' maxlength='1' name='ics[ABN_8]' readonly='' type='text' value='7'>
+              				<input class='digit-box form-control' id='ABN_9' maxlength='1' name='ics[ABN_9]' readonly='' type='text' value='6'>
+              				<input class='digit-box form-control' id='ABN_10' maxlength='1' name='ics[ABN_10]' readonly='' type='text' value='2'>
+              				<input class='digit-box form-control' id='ABN_11' maxlength='1' name='ics[ABN_11]' readonly='' type='text' value='7'>
+            			</div>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='Business_register'>
+          				Is your business registered for GST purposes?
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='radio'>
+              				<label>
+                				<input disabled='' checked='checked' name='ics[Business_register]' type='radio' value='Yes'>
+                					Yes
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+                				<input disabled=''  name='ics[Business_register]' type='radio' value='No'>
+                					No
+              				</label>
+            			</div>
+            		</div>
+          		</div>
+          		
+          		<div class='form-group'>
+        			<label class='col-sm-3 control-label' for='business_name'>
+            			Name of Business
+            		<div class='small normal-font-weight'>
+              			(e.g. mining, education)
+            		</div>
+        			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='business_name' name='ics[business_name]' readonly='' type='text' value='Indigenous Employment'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+        		    <h4 class='col-sm-3 control-label'>
+        				Contact Person
+        			</h4>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='contact_name'>
+          				Full Name
+          			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='contact_name' name='ics[contact_name]' readonly='' type='text' value='Andrew Veasey'>
+          			</div>
+        		</div>
+          		
+          		<div class='form-group'>
+        		    <h4 class='col-sm-3 control-label'>
+        				Phone Number
+        			</h4>
+        		</div>
+          		
+          		<div class='form-group'>
+        			<label class='small col-sm-3 control-label' for='contact_business_number'>
+            			Business hours
+        			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='contact_business_number' name='ics[contact_business_number]' readonly='' type='text' value='(02) 8090 5765'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+            		<label class='small col-sm-3 control-label' for='contact_mobile_number'>
+              			Mobile Number
+              		</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='contact_mobile_number' name='ics[contact_mobile_number]' readonly='' type='text' value='+61 455 838 777'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='contact_email'>
+          				Email Address
+          			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='contact_email' name='ics[contact_email]' readonly='' type='text' value='Andrew.Veasey@careertrackers.org.au'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='business_method_of_contact'>
+          				Preferred method of contact
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' name='ics[business_method_of_contact]' type='radio' value="{%if params['business_method_of_contact']%}{{'mail'}}{%else%}{{'mail'}}{%endif%}"> Mail
+          					</label>
+        				</div>            				
+        				<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[business_method_of_contact]' type='radio' value="{%if params['business_method_of_contact']%}{{'phone'}}{%else%}{{'phone'}}{%endif%}">
+                				Phone
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' name='ics[business_method_of_contact]' type='radio' value="{%if params['business_method_of_contact']%}{{'mobile'}}{%else%}{{'mobile'}}{%endif%}">
+            					Mobile
+          					</label>
+        				</div>            				
+        				<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[business_method_of_contact]' type='radio' value="{%if params['business_method_of_contact']%}{{'fax'}}{%else%}{{'fax'}}{%endif%}">
+                				Fax
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' checked='checked' name='ics[business_method_of_contact]' type='radio' value="{%if params['business_method_of_contact']%}{{'email'}}{%else%}{{'email'}}{%endif%}">
+            					Email
+          					</label>
+        				</div>
+          			</div>
+          		</div>
+          		        
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+          		
+          		<div class='form-group'>
+        		    <h4 class='col-sm-3 control-label'>
+        				Alternate Contact Person
+        			</h4>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='alternate_contact_name'>
+          				Full Name
+          			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='alternate_contact_name' name='ics[alternate_contact_name]' readonly='' type='text' value='Michael Combs'>
+          			</div>
+        		</div>
+          		
+          		<div class='form-group'>
+        		    <h4 class='col-sm-3 control-label'>
+        				Phone Number
+        			</h4>
+        		</div>
+        		
+          		<div class='form-group'>
+        			<label class='small col-sm-3 control-label' for='alternate_business_number'>
+            			Business hours
+        			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='alternate_business_number' name='ics[alternate_business_number]' readonly='' type='text' value='(02) 8090 5765'>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+            		<label class='small col-sm-3 control-label' for='alternate_mobile_number'>
+              			Mobile Number
+              		</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='alternate_mobile_number' name='ics[alternate_mobile_number]' readonly='' type='text' value=''>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='alternate_contact_email'>
+          				Email Address
+          			</label>
+          			<div class='col-sm-5'>
+            			<input class='form-control' id='alternate_contact_email' name='ics[alternate_contact_email]' readonly='' type='text' value='Michael.combs@careertrackers.org.au'>
+          			</div>
+        		</div>
+
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='alternate_method_of_contact'>
+          				Preferred method of contact
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' name='ics[alternate_method_of_contact]' type='radio' value='mail'>
+            					Mail
+          					</label>
+        				</div>            				
+        				<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[alternate_method_of_contact]' type='radio' value='phone'>
+                				Phone
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' name='ics[alternate_method_of_contact]' type='radio' value='mobile'>
+            					Mobile
+          					</label>
+        				</div>            				
+        				<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[alternate_method_of_contact]' type='radio' value='fax'>
+                				Fax
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+              					<input disabled='' checked='checked' name='ics[alternate_method_of_contact]' type='radio' value='email'>
+            					Email
+          					</label>
+        				</div>
+          			</div>
+          		</div>
+        		
+        	</fieldset>
+        </div>
+    </div>
+    
+    
+    <!-- Visible From Below -->
+    <h3>
+      Item 2 - Cadet Details
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+      <fieldset>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='last_name'>Last name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='last_name' name='ics[last_name]' placeholder='Last Name' type='text' value="{%if params['last_name']%}{{params['last_name']}}{%else%}{{intern['last_name']}}{%endif%}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='first_name'>First name</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='first_name' name='ics[first_name]' placeholder='First Name' type='text' value="{%if params['first_name']%}{{params['first_name']}}{%else%}{{intern['first_name']}}{%endif%}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='initials'>Initials of other given names</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='initials' name='ics[initials]' placeholder='Initials' type='text' value="{{params['initials']}}">
+          </div>
+        </div>
+        
+                
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='ics_id_1'>ICS ID</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='ics_id digit-box form-control' id='ics_id_1' maxlength='1' name='ics[ics_id_1]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_2' maxlength='1' name='ics[ics_id_2]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_3' maxlength='1' name='ics[ics_id_3]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_4' maxlength='1' name='ics[ics_id_4]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_5' maxlength='1' name='ics[ics_id_5]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_6' maxlength='1' name='ics[ics_id_6]' readonly='' type='text'>
+              <input class='ics_id digit-box form-control' id='ics_id_7' maxlength='1' name='ics[ics_id_7]' readonly='' type='text'>
+            </div>
+            <div class='add-on'></div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='gender'>Gender</label>
+          <div class='col-sm-5'>
+            {% assign gender = intern['gender'] %}
+            {% if params['gender'] %}
+            {% assign gender = params['gender'] %}
+            {% endif %}
+            {% unless gender %}
+            {% endunless %}
+            <div class='radio'>
+              <label>
+                {% if gender == 'male' %}
+                <input checked='checked' id='gender' name='ics[gender]' type='radio' value='male'>
+                {% else %}
+                <input name='ics[gender]' id='gender' type='radio' value='male'>
+                {% endif %}
+                Male
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                {% if gender == 'female' %}
+                <input checked='checked' id='gender' name='ics[gender]' type='radio' value='female'>
+                {% else %}
+                <input name='ics[gender]' id='gender' type='radio' value='female'>
+                {% endif %}
+                Female
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='dob'>
+            Date of Birth
+            <div class='small normal-font-weight'>
+              (DD/MM/YYYY)
+            </div>
+          </label>
+          <div class='col-sm-5'>
+            <input class=' form-control' maxlength='10' name='ics[dob]' pattern='' required='' type='text' value="{%if params['dob']%}{{params['dob']}}{%else%}{{intern['dob']}}{%endif%}">
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='descent'>I am one of the following:</label>
+          <div class='col-sm-5'>
+            {% assign descent = params['descent'] %}
+            <div class='radio'>
+              <label>
+                {% if descent == 'aboriginal' %}
+                <input checked='checked' name='ics[descent]' type='radio' value='aboriginal'>
+                {% else %}
+                <input name='ics[descent]' type='radio' value='aboriginal'>
+                {% endif %}
+                of Australian Aboriginal descent; or
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                {% if descent == 'torres' %}
+                <input checked='checked' name='ics[descent]' type='radio' value='torres'>
+                {% else %}
+                <input name='ics[descent]' type='radio' value='torres'>
+                {% endif %}
+                of Torres Strait Islander descent; or
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                {% if descent == 'aboriginal_torres' %}
+                <input checked='checked' name='ics[descent]' type='radio' value='aboriginal_torres'>
+                {% else %}
+                <input name='ics[descent]' type='radio' value='aboriginal_torres'>
+                {% endif %}
+                of both Aboriginal and Torres Strait Islander descent.
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='job_seekers_id'>Job Seekers ID <small class='normal-font-weight'>
+                (if known and if applicable)
+              </small></label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='job_seekers_id' name='ics[job_seekers_id]' placeholder='Job Seekers ID' readonly='' type='text'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='email'>Email address</label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='email' name='ics[email]' placeholder='Email address' required='' type='email' value="{%if params['email']%}{{params['email']}}{%else%}{{intern['email']}}{%endif%}">
+          </div>
+        </div>
+
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 control-label' for='residential_address_1'>
+            Residential address
+          </label>
+          <div class='col-sm-5'>
+          	<div class='input-vertical-group'>
+          		<input class='form-control' id='residential_address_1' name='ics[residential_address_1]' placeholder='Number and Street Name' type='text' value="{{params['residential_address_1']}}">
+          		<input class='form-control' id='residential_address_2' name='ics[residential_address_2]' placeholder='Suburb/Town' type='text' value="{{params['residential_address_2']}}">
+              	
+            	<select class='form-control' id='residential_address_3' name='ics[residential_address_3]' placeholder='State/Territory' value="{{params['residential_address_3']}}">
+                	
+                	<option value = "">State</option>
+                	
+                	{% if params['residential_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+                	
+                	{% if params['residential_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['residential_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+                	
+            	</select>
+        	</div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='small col-sm-3 control-label' for='residential_post_1'>Postcode</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='digit-box form-control' maxlength="1" name='ics[residential_post_1]' type='text' value="{{params['residential_post_1']}}" >
+              <input class='digit-box form-control' maxlength="1" name='ics[residential_post_2]' type='text' value="{{params['residential_post_2']}}" >
+              <input class='digit-box form-control' maxlength="1" name='ics[residential_post_3]' type='text' value="{{params['residential_post_3']}}" >
+              <input class='digit-box form-control' maxlength="1" name='ics[residential_post_4]' type='text' value="{{params['residential_post_4']}}" >
+            </div>
+          </div>
+        </div>
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 control-label' for='postal_address_1'>
+            Postal address
+            <div class='small normal-font-weight'>
+              (if different from residential address)
+            </div>
+          </label>
+          <div class='col-sm-5 input-vertical-group'>
+            <input class='form-control' id='postal_address_1' name='ics[postal_address_1]' placeholder='Number and Street Name' type='text' value="{{params['postal_address_1']}}">
+            <input class='form-control' id='postal_address_2' name='ics[postal_address_2]' placeholder='Suburb/Town'type='text' value="{{params['postal_address_2']}}">
+            <select class='form-control' id='postal_address_3' name='ics[postal_address_3]' type='text' value="{{params['postal_address_3']}}">
+                	<option value = "">State</option>
+                	{% if params['postal_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+                	
+                	{% if params['postal_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['postal_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['postal_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+			</select>          
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='small col-sm-3 control-label' for='postal_post_1'>Postcode</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='digit-box form-control' maxlength='1' name='ics[postal_post_1]' type='text' value="{{params['postal_post_1']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[postal_post_2]' type='text' value="{{params['postal_post_2']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[postal_post_3]' type='text' value="{{params['postal_post_3']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[postal_post_4]' type='text' value="{{params['postal_post_4']}}">
+            </div>
+          </div>
+        </div>
+        
+         <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 control-label' for='semester_address_1'>
+            Semester address
+            <div class='small normal-font-weight'>
+              (if different from residential or postal address)
+            </div>
+          </label>
+          <div class='col-sm-5 input-vertical-group'>
+            <input class='form-control' id='semester_address_1' name='ics[semester_address_1]' placeholder='Number and Street Name' type='text' value="{{params['semester_address_1']}}">
+            <input class='form-control' id='semester_address_2' name='ics[semester_address_2]' placeholder='Suburb/Town' type='text' value="{{params['semester_address_2']}}">
+            <select class='form-control' id='semester_address_3' name='ics[semester_address_3]' type='text' value="{{params['semester_address_3']}}">
+                	<option value = "">State</option>
+                	{% if params['semester_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+                	
+                	{% if params['semester_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['semester_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['semester_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+          	</select>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='small col-sm-3 control-label' for='semester_post_1'>Postcode</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='digit-box form-control' maxlength='1' name='ics[semester_post_1]' type='text' value="{{params['semester_post_1']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[semester_post_2]' type='text' value="{{params['semester_post_2']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[semester_post_3]' type='text' value="{{params['semester_post_3']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[semester_post_4]' type='text' value="{{params['semester_post_4']}}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='phone'>
+            Contact phone numbers:
+          </label>
+        </div>
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 small control-label' for='home_phone'>
+            Residential
+          </label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='area_code form-control' id='home_phone_area' maxlength='2' name='ics[home_phone_area]' type='text' value="{{params['home_phone_area']}}">
+              <input class='phone form-control' id='home_phone' name='ics[home_phone]' type='text' value="{{params['home_phone']}}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 small control-label' for='fax'>Fax number</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='area_code form-control' id='fax_area' maxlength='2' name='ics[fax_area]' type='text' value="{{params['fax_area']}}">
+              <input class='phone form-control' id='fax' name='ics[fax]' type='text' value="{{params['fax']}}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 small control-label' for='mobile'>
+            Mobile
+          </label>
+          <div class='col-sm-5'>
+            <input class='mobile form-control' name='ics[mobile]' placeholder='' type='text' value="{{params['mobile']}}">
+          </div>
+        </div>
+         
+        
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='educational_institution'>
+            Educational institution at which you are enrolled
+          </label>
+          <div class='col-sm-5'>
+            <select class='form-control' id='educational_institution' name='ics[educational_institution]' placeholder='Educational Institution' type='text' value="{{params['educational_institution']}}">
+            <option value='' ></option>
+            {% if params['educational_institution'] == "Australian Catholic University" %}
+            <option selected='' value = "{%if params['educational_institution']%}{{'Australian Catholic University'}}{%else%}{{'Australian Catholic University'}}{%endif%}">Australian Catholic University</option>
+            {% else %}
+            <option value = "Australian Catholic University">Australian Catholic University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Australian National University" %}
+            <option selected='' value = "Australian National University">Australian National University</option>
+            {% else %}
+            <option value = "Australian National University">Australian National University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Billy Blue" %}
+            <option selected='' value = "Billy Blue">Billy Blue</option>
+            {% else %}
+            <option value = "Billy Blue">Billy Blue</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Bond University" %}
+            <option selected='' value = "Bond University">Bond University</option>
+            {% else %}
+            <option value = "Bond University">Bond University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Central Queensland University" %}
+            <option selected='' value = "Central Queensland University">Central Queensland University</option>
+            {% else %}
+            <option value = "Central Queensland University">Central Queensland University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Charles Darwin University" %}
+            <option selected='' value = "Charles Darwin University">Charles Darwin University</option>
+            {% else %}
+            <option value = "Charles Darwin University">Charles Darwin University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Charles Sturt University" %}
+            <option selected='' value = "Charles Sturt University">Charles Sturt University</option>
+            {% else %}
+            <option value = "Charles Sturt University">Charles Sturt University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Curtin University of Technology" %}
+            <option selected='' value = "Curtin University of Technology">Curtin University of Technology</option>
+            {% else %}
+            <option value = "Curtin University of Technology">Curtin University of Technology</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Deakin University" %}
+            <option selected='' value = "Deakin University">Deakin University</option>
+            {% else %}
+            <option value = "Deakin University">Deakin University</option>
+            {% endif %}
+             
+            {% if params['educational_institution'] == "Edith Cowan University" %}
+            <option selected='' value = "Edith Cowan University">Edith Cowan University</option>
+            {% else %}
+            <option value = "Edith Cowan University">Edith Cowan University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Federation University Australia" %}
+            <option selected='' value = "Federation University Australia">Federation University Australia</option>
+            {% else %}
+            <option value = "Federation University Australia">Federation University Australia</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Flinders University" %}
+            <option selected='' value = "Flinders University">Flinders University</option>
+            {% else %}
+            <option value = "Flinders University">Flinders University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Griffith University" %}
+            <option selected='' value = "Griffith University">Griffith University</option>
+            {% else %}
+            <option value = "Griffith University">Griffith University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "James Cook University" %}
+            <option selected='' value = "James Cook University">James Cook University</option>
+            {% else %}
+            <option value = "James Cook University">James Cook University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "La Trobe University" %}
+            <option selected='' value = "La Trobe University">La Trobe University</option>
+            {% else %}
+            <option value = "La Trobe University">La Trobe University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Macquarie University" %}
+            <option selected='' value = "Macquarie University">Macquarie University</option>
+            {% else %}
+            <option value = "Macquarie University">Macquarie University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Monash University" %}
+            <option selected='' value = "Monash University">Monash University</option>
+            {% else %}
+            <option value = "Monash University">Monash University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Murdoch University" %}
+            <option selected='' value = "Murdoch University">Murdoch University</option>
+            {% else %}
+            <option value = "Murdoch University">Murdoch University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Open Universities" %}
+            <option selected='' value = "Open Universities">Open Universities</option>
+            {% else %}
+            <option value = "Open Universities">Open Universities</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Queensland University of Technology" %}
+            <option selected='' value = "Queensland University of Technology">Queensland University of Technology</option>
+            {% else %}
+            <option value = "Queensland University of Technology">Queensland University of Technology</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "RMIT University" %}
+            <option selected='' value = "RMIT University">RMIT University</option>
+            {% else %}
+            <option value = "RMIT University">RMIT University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Southern Cross University" %}
+            <option selected='' value = "Southern Cross University">Southern Cross University</option>
+            {% else %}
+            <option value = "Southern Cross University">Southern Cross University</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Swinburne University of Technology" %}
+            <option selected='' value = "Swinburne University of Technology">Swinburne University of Technology</option>
+            {% else %}
+            <option value = "Swinburne University of Technology">Swinburne University of Technology</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Adelaide" %}
+            <option selected='' value = "University of Adelaide">University of Adelaide</option>
+            {% else %}
+            <option value = "University of Adelaide">University of Adelaide</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Ballarat" %}
+            <option selected='' value = "University of Ballarat">University of Ballarat</option>
+            {% else %}
+            <option value = "University of Ballarat">University of Ballarat</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Canberra" %}
+            <option selected='' value = "University of Canberra">University of Canberra</option>
+            {% else %}
+            <option value = "University of Canberra">University of Canberra</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Melbourne" %}
+            <option selected='' value = "University of Melbourne">University of Melbourne</option>
+            {% else %}
+            <option value = "University of Melbourne">University of Melbourne</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of New England" %}
+            <option selected='' value = "University of New England">University of New England</option>
+            {% else %}
+            <option value = "University of New England">University of New England</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of New South Wales" %}
+            <option selected='' value = "University of New South Wales">University of New South Wales</option>
+            {% else %}
+            <option value = "University of New South Wales">University of New South Wales</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Newcastle" %}
+            <option selected='' value = "University of Newcastle">University of Newcastle</option>
+            {% else %}
+            <option value = "University of Newcastle">University of Newcastle</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Notre Dame" %}
+            <option selected='' value = "University of Notre Dame">University of Notre Dame</option>
+            {% else %}
+            <option value = "University of Notre Dame">University of Notre Dame</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Queensland" %}
+            <option selected='' value = "University of Queensland">University of Queensland</option>
+            {% else %}
+            <option value = "University of Queensland">University of Queensland</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of South Australia" %}
+            <option selected='' value = "University of South Australia">University of South Australia</option>
+            {% else %}
+            <option value = "University of South Australia">University of South Australia</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Southern Queensland" %}
+            <option selected='' value = "University of Southern Queensland">University of Southern Queensland</option>
+            {% else %}
+            <option value = "University of Southern Queensland">University of Southern Queensland</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Sydney" %}
+            <option selected='' value = "University of Sydney">University of Sydney</option>
+            {% else %}
+            <option value = "University of Sydney">University of Sydney</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Tasmania" %}
+            <option selected='' value = "University of Tasmania">University of Tasmania</option>
+            {% else %}
+            <option value = "University of Tasmania">University of Tasmania</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Technology, Sydney" %}
+            <option selected='' value = "University of Technology, Sydney">University of Technology, Sydney</option>
+            {% else %}
+            <option value = "University of Technology, Sydney">University of Technology, Sydney</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Western Australia" %}
+            <option selected='' value = "University of Western Australia">University of Western Australia</option>
+            {% else %}
+            <option value = "University of Western Australia">University of Western Australia</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Western Sydney" %}
+            <option selected='' value = "University of Western Sydney">University of Western Sydney</option>
+            {% else %}
+            <option value = "University of Western Sydney">University of Western Sydney</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Wollongong" %}
+            <option selected='' value = "University of Wollongong">University of Wollongong</option>
+            {% else %}
+            <option value = "University of Wollongong">University of Wollongong</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "University of Sunshine Coast" %}
+            <option selected='' value = "University of Sunshine Coast">University of Sunshine Coast</option>
+            {% else %}
+            <option value = "University of Sunshine Coast">University of Sunshine Coast</option>
+            {% endif %}
+            
+            {% if params['educational_institution'] == "Victoria University" %}
+            <option selected='' value = "Victoria University">Victoria University</option>
+            {% else %}
+            <option value = "Victoria University">Victoria University</option>
+            {% endif %}
+            
+            
+            </select>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='campus_location'>
+            Campus location
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='campus_location' name='ics[campus_location]' placeholder='Campus location' type='text' value="{{params['campus_location']}}">
+          </div>
+        </div>
+        <div class='form-group no-margin-bottom'>
+          <label class='col-sm-3 control-label' for='faculty_address_1'>
+            Faculty address
+          </label>
+          <div class='col-sm-5 input-vertical-group'>
+            <input class='form-control' id='faculty_address_1' name='ics[faculty_address_1]' placeholder='Number and Street Name' type='text' value="{{params['faculty_address_1']}}">
+            <input class='form-control' id='faculty_address_2' name='ics[faculty_address_2]' placeholder='Suburb/Town' type='text' value="{{params['faculty_address_2']}}">
+            <select class='form-control' id='faculty_address_3' name='ics[faculty_address_3]' type='text' value="{{params['faculty_address_3']}}">
+                	<option value = "">State</option>
+                	{% if params['faculty_address_3'] == "NSW" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'NSW'}}{%else%}{{'NSW'}}{%endif%}">NSW</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "QLD" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'QLD'}}{%else%}{{'QLD'}}{%endif%}">QLD</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "VIC" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'VIC'}}{%else%}{{'VIC'}}{%endif%}">VIC</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "SA" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'SA'}}{%else%}{{'SA'}}{%endif%}">SA</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "TAS" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'TAS'}}{%else%}{{'TAS'}}{%endif%}">TAS</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "WA" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'WA'}}{%else%}{{'WA'}}{%endif%}">WA</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "ACT" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'ACT'}}{%else%}{{'ACT'}}{%endif%}">ACT</option>
+                	{% endif %}
+                	
+                	{% if params['faculty_address_3'] == "NT" %}
+                		<option selected='' value = "{%if params['faculty_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% else %}
+                		<option value = "{%if params['faculty_address_3']%}{{'NT'}}{%else%}{{'NT'}}{%endif%}">NT</option>
+                	{% endif %}
+			</select>          
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='small col-sm-3 control-label' for='faculty_post_1'>Postcode</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='digit-box form-control' maxlength='1' name='ics[faculty_post_1]' type='text' value="{{params['faculty_post_1']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[faculty_post_2]' type='text' value="{{params['faculty_post_2']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[faculty_post_3]' type='text' value="{{params['faculty_post_3']}}">
+              <input class='digit-box form-control' maxlength='1' name='ics[faculty_post_4]' type='text' value="{{params['faculty_post_4']}}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='course'>
+            Course of study
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='course' name='ics[course]' placeholder='' type='text' value="{%if params['course']%}{{params['course']}}{%else%}{{'Bachelor of '}}{%endif%}">
+            <!--<input class='form-control' id='course' name='ics[course]' placeholder='' type='text' value="{%if params['course']%}{{'Bachelor of'}}{%else%}{{'Bachelor of'}}{%endif%}">-->
+          </div>
+        </div>
+
+		<div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+        <div class='form-group hide-form'>
+        	<label class=' col-sm-3 control-label' for='study_award'>Study Award</label>
+        	<div class='col-sm-5'>
+            	<div class='radio'>
+            		<label>
+                		<input disabled='' checked='checked' name='ics[study_award]' type='radio' value='Undergraduate Degree'>
+                		Undergraduate Degree
+              		</label>
+            	</div>
+            	<div class='radio'>
+              		<label>
+                		<input disabled='' name='ics[study_award]' type='radio' value='Diploma'>
+                		Diploma
+              	</label>
+            	</div>
+            	<div class='radio'>
+              		<label>
+                		<input disabled='' name='ics[study_award]' type='radio' value='Advanced Diploma'>
+                		Advanced Diploma
+              		</label>
+            	</div>
+            	<div class='radio'>
+              		<label>
+                		<input disabled='' name='ics[study_award]' type='radio' value='Other'>
+                		Other
+              		</label>
+            	</div>
+          </div>
+        </div>
+        
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 control-label' for='enrolment_status'>
+            Enrolment status
+            <div class='small normal-font-weight'>
+              (e.g. full-time, part-time, deferred)
+        	</div>
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='enrolment_status' name='ics[enrolment_status]' type='text' value="{%if params['enrolment_status']%}{{'full-time'}}{%else%}{{'full-time'}}{%endif%}" readonly='full-time' >
+          </div>																						
+        </div>
+        
+        
+        
+      </fieldset>
+    </div>    
+    
+    <h3>
+      Item 3 - Cadetship Plan
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+      <fieldset>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='job_title'>
+            Job title
+            <div class='small normal-font-weight'>
+              (e.g. IT Cadet, Psychology Cadet etc)
+            </div>
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='job_title' name='ics[job_title]' readonly='' type='text' value='CareerTrackers Intern'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='cadetship_date'>
+            Proposed commencement date of Cadetship
+            <div class='small normal-font-weight'>
+              (please allow 10 business days for processing)
+            </div>
+          </label>
+          <div class='col-sm-5'>
+            <select class='form-control' id='cadetship_date' name='ics[cadetship_date]'>
+              <option value=''>---</option>
+              {% for date in contents.cadetship_commencement_dates%}
+              {% if date._slug == params['cadetship_date'] %}
+              <option selected='' value='{{date._slug}}'>{{date.date}}</option>
+              {% else %}
+              <option value='{{date._slug}}'>{{date.date}}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='graduation_date'>
+            Expected University Graduation date
+          </label>
+          <div class='col-sm-5'>
+            <select class='form-control' id='graduation_date' name='ics[graduation_date]'>
+              <option value=''>---</option>
+              {% for date in contents.expected_graduation_dates%}
+              {% if date._slug == params['graduation_date'] %}
+              <option selected='' value='{{date._slug}}'>{{date.date}}</option>
+              {% else %}
+              <option value='{{date._slug}}'>{{date.date}}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+        
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 control-label' for='industrial_instrument'>
+            Industrial Instrument under which the Cadet will be employed
+            <div class='small normal-font-weight'>
+              (e.g. Award, Certified Agreement, Australian Workplace Agreement)
+            </div>
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='job_title' name='ics[industrial_instrument]' readonly='' type='text' value='Workplace Agreement'>
+          </div>
+        </div>
+        <div class='form-group'>
+          <label class='col-sm-3 control-label' for='workplace_address_1'>
+            Street address of workplace at which Cadet will undertake the work placement
+          </label>
+          <div class='col-sm-5'>
+            <div class='input-vertical-group'>
+              <input class='form-control' id='workplace_address_1' name='ics[workplace_address_1]' readonly='' type='text' value='Suite 1, Level 5'>
+              <input class='form-control' id='workplace_address_2' name='ics[workplace_address_2]' readonly='' type='text' value='309 George Street'>
+              <input class='form-control' id='workplace_address_3' name='ics[workplace_address_3]' readonly='' type='text' value='Sydney, NSW 2000'>
+            </div>
+          </div>
+        </div>
+
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 control-label' for='cadet_work_email'>
+            Email address of cadet work placement
+            <div class='small normal-font-weight'>
+              (if applicable)
+            </div>
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' id='cadet_work_email' name='ics[cadet_work_email]' type='text' value="{{params['cadet_work_email']}}">
+          </div>
+        </div>
+        <!-- hidden -->
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 control-label' for='advisor'>
+            Mentor
+          </label>
+        </div>
+        <div class='form-group hide-form'>
+          <label class='small col-sm-3 control-label' for='advisor_full_name'>
+            Full name
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' readonly='' id='advisor_full_name' name='ics[advisor_full_name]' type='text' value="{%if params['advisor_full_name']%}{{'Anuj Khatri'}}{%else%}{{'Anuj Khatri'}}{%endif%}">
+          </div>
+        </div>
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 control-label' for='advisor_contact'>
+            Phone number
+          </label>
+        </div>
+        <div class='form-group hide-form no-margin-bottom'>
+          <label class='col-sm-3 small control-label' for='advisor_contact_business'>
+            Business hours
+          </label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='area_code form-control' readonly='' id='advisor_contact_business_area' maxlength='2' name='ics[advisor_contact_business_area]' type='text' value="02">
+              <input class='phone form-control' readonly='' id='advisor_contact_business' name='ics[advisor_contact_business]' type='text' value="{%if params['advisor_contact_business']%}{{'8090 5765'}}{%else%}{{'8090 5765'}}{%endif%}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group hide-form no-margin-bottom'>
+          <label class='col-sm-3 small control-label' for='advisor_contact_mobile'>
+            Mobile
+          </label>
+          <div class='col-sm-5'>
+            <input class='mobile form-control' readonly='' id='advisor_contact_mobile' name='ics[advisor_contact_mobile]' placeholder='' type='text' value="{%if params['advisor_contact_mobile']%}{{'0427 245 403'}}{%else%}{{'0427 245 403'}}{%endif%}">
+          </div>
+        </div>
+        <div class='form-group hide-form'>
+          <label class='col-sm-3 small control-label' for='advisor_contact_fax'>Fax number</label>
+          <div class='col-sm-5'>
+            <div class='input-group'>
+              <input class='area_code form-control' readonly='' id='advisor_contact_fax_area' maxlength='2' name='ics[advisor_contact_fax_area]' type='text' value="{{params['advisor_contact_fax_area']}}">
+              <input class='phone form-control' readonly='' id='advisor_contact_fax' name='ics[advisor_contact_fax]' type='text' value="{{params['advisor_contact_fax']}}">
+            </div>
+          </div>
+        </div>
+        <div class='form-group hide-form'>
+          <label class='small col-sm-3 control-label' for='advisor_email_address'>
+            Email address
+          </label>
+          <div class='col-sm-5'>
+            <input class='form-control' readonly='' id='advisor_email_address' name='ics[advisor_email_address]' type='text' value="{%if params['advisor_email_address']%}{{'Anuj.Khatri@careertrackers.org.au'}}{%else%}{{'Anuj.Khatri@careertrackers.org.au'}}{%endif%}">
+          </div>
+        </div>
+        
+        <div class='form-group hide-form'>
+          <label class='small col-sm-3 control-label' for='advisor_method_of_contact'>Preferred method of contact</label>
+          <div class='col-sm-5'>
+            <div class='radio'>
+              <label>
+                <input disabled='' name='ics[advisor_method_of_contact]' type='radio' value='mail'>
+                Mail
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                <input disabled='' name='ics[advisor_method_of_contact]' type='radio' value='phone'>
+                Phone
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                <input disabled='' name='ics[advisor_method_of_contact]' type='radio' value='mobile'>
+                Mobile
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                <input disabled='' name='ics[advisor_method_of_contact]' type='radio' value='fax'>
+                Fax
+              </label>
+            </div>
+            <div class='radio'>
+              <label>
+                <input disabled='' checked='checked' name='ics[advisor_method_of_contact]' type='radio' value='email'>
+                Email
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <!-- still sort of hidden-->
+      </fieldset>
+    </div>
+    
+    <!-- spacer -->
+
+	<!-- End of spacer-->
+    
+    	<div class='hide-form'>
+	<h3>
+       Item 4 - Business bank details for payment of financial assistance
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+    	<fieldset>
+    	
+    		<div class='form-group'>
+        		<label class='col-sm-3 control-label' for='financial_institution_type'>Type of Financial Institution</label>
+        			<div class='col-sm-5'>
+            			<div class='radio'>
+            				<label>
+                				<input checked='' disabled='' name='ics[financial_institution_type]' type='radio' value='Bank'>
+                				Bank
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[financial_institution_type]' type='radio' value='Credit Union'>
+                				Credit Union
+              				</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[financial_institution_type]' type='radio' value='Building Society'>
+                				Building Society
+              					</label>
+            			</div>
+            			<div class='radio'>
+              				<label>
+                				<input disabled='' name='ics[financial_institution_type]' type='radio' value='Other'>
+                				Other
+              				</label>
+            			</div>
+            		</div>
+          	</div>
+    		<div class='form-group'>
+          		<label class='col-sm-3 control-label' for='financial_institution'>
+            		Full name of financial institution
+          		</label>
+          		<div class='col-sm-5'>
+            		<input class='form-control' id='job_title' name='ics[financial_institution]' readonly='' type='text' value='Westpac'>
+          		</div>
+        	</div>
+        	
+        	<div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        	</div>
+        	
+        	<div class='form-group'>
+          		<label class='col-sm-3 control-label' for='branch_location'>
+            		Location of branch (in full) where account is held
+          		</label>
+          		<div class='col-sm-5'>
+            		<input class='form-control' id='job_title' name='ics[branch_location]' readonly='' type='text' value='Surry Hills'>
+          		</div>
+        	</div>
+        	
+        	<div class='form-group'>
+          		<label class='col-sm-3 control-label' for='Name_Of_Account'>
+            		Full name of account
+          		</label>
+          		<div class='col-sm-5'>
+            		<input class='form-control' id='job_title' name='ics[Name_Of_Account]' readonly='' type='text' value='CareerTrackers Indigenous Internship Program'>
+          		</div>
+        	</div>
+        	<!--
+        	<div class='form-group'>
+          		<label class='col-sm-3 control-label' for='BSB_Code'>
+            		BSB Code: 
+          		</label>
+          		<div class='col-sm-5'>
+            		<input class='form-control' id='job_title' name='ics[BSB_Code]' readonly='' type='text' value=''>
+          		</div>
+        	</div>
+        	-->
+        	
+        	<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='BSB_1'>
+          				BSB Code:
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' id='BSB_1' maxlength='1' name='ics[BSB_1]' readonly='' type='text' value='0'>
+              				<input class='digit-box form-control' id='BSB_2' maxlength='1' name='ics[BSB_2]' readonly='' type='text' value='3'>
+              				<input class='digit-box form-control' id='BSB_3' maxlength='1' name='ics[BSB_3]' readonly='' type='text' value='2'>
+              				<input class='digit-box form-control' id='BSB_4' maxlength='1' name='ics[BSB_4]' readonly='' type='text' value='0'>
+              				<input class='digit-box form-control' id='BSB_5' maxlength='1' name='ics[BSB_5]' readonly='' type='text' value='2'>
+              				<input class='digit-box form-control' id='BSB_6' maxlength='1' name='ics[BSB_6]' readonly='' type='text' value='3'>
+          				</div>
+        		</div>
+        	</div>
+        	
+        	<!--
+        	<div class='form-group'>
+          		<label class='col-sm-3 control-label' for='ACC_NO'>
+            		Account Number: 
+          		</label>
+          		<div class='col-sm-5'>
+            		<input class='form-control' id='job_title' name='ics[ACC_NO]' readonly='' type='text' value=''>
+          		</div>
+        	</div>
+        	-->
+        	
+        	    <div class='form-group no-margin-bottom'>
+          			<label class='col-sm-3 control-label' for='ACC_1_1'>
+          				Account Number
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' id='ACC_1_1' maxlength='1' name='ics[ACC_1_1]' readonly='' type='text' value='2'>
+              				<input class='digit-box form-control' id='ACC_1_2' maxlength='1' name='ics[ACC_1_2]' readonly='' type='text' value='6'>
+              				<input class='digit-box form-control' id='ACC_1_3' maxlength='1' name='ics[ACC_1_3]' readonly='' type='text' value='4'>
+              				<input class='digit-box form-control' id='ACC_1_4' maxlength='1' name='ics[ACC_1_4]' readonly='' type='text' value='4'>
+              				<input class='digit-box form-control' id='ACC_1_5' maxlength='1' name='ics[ACC_1_5]' readonly='' type='text' value='1'>
+              				<input class='digit-box form-control' id='ACC_1_6' maxlength='1' name='ics[ACC_1_6]' readonly='' type='text' value='9'>
+              				<input class='digit-box form-control' id='ACC_1_7' maxlength='1' name='ics[ACC_1_7]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_1_8' maxlength='1' name='ics[ACC_1_8]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_1_9' maxlength='1' name='ics[ACC_1_9]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_1_10' maxlength='1' name='ics[ACC_1_10]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_1_11' maxlength='1' name='ics[ACC_1_11]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_1_12' maxlength='1' name='ics[ACC_1_12]' readonly='' type='text' value=''>
+            			</div>
+          			</div>
+        		</div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='ACC_1_1'>
+          				
+          			</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='digit-box form-control' id='ACC_2_1' maxlength='1' name='ics[ACC_2_1]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_2' maxlength='1' name='ics[ACC_2_2]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_3' maxlength='1' name='ics[ACC_2_3]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_4' maxlength='1' name='ics[ACC_2_4]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_5' maxlength='1' name='ics[ACC_2_5]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_6' maxlength='1' name='ics[ACC_2_6]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_7' maxlength='1' name='ics[ACC_2_7]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_8' maxlength='1' name='ics[ACC_2_8]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_9' maxlength='1' name='ics[ACC_2_9]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_10' maxlength='1' name='ics[ACC_2_10]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_11' maxlength='1' name='ics[ACC_2_11]' readonly='' type='text' value=''>
+              				<input class='digit-box form-control' id='ACC_2_12' maxlength='1' name='ics[ACC_2_12]' readonly='' type='text' value=''>
+            			</div>
+          			</div>
+        		</div>
+      </fieldset>
+    </div> 
+    </div>
+    <!-- spacer -->
+
+
+    <!-- end spacer -->
+    
+    <div class='hide-form'>
+	<h3>
+        Item 5 - Sponsor Certification
+    </h3>
+    <hr>
+    <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+    	<p>
+    		<strong>I certify that: </strong>
+    		<ul>
+				<li>I am a representative of the Sponsor who is authorised to legally bind the Sponsor; </li>
+				<li>I have checked the details entered on this application (including the details at Items 1, 3 and 5) and certify to the best of my knowledge that the details are true and complete; </li>
+				<li>I have read and understand the ‘Terms and Conditions’ overleaf that apply to this Agreement; </li>
+				<li>I agree to abide by the ‘Terms and Conditions’ of this Agreement; </li>
+				<li>I am aware that under the Criminal Code Act 1995 (Cth) section 137.1 giving false or misleading information is a serious offcence</li>
+    		</ul>
+        <fieldset class='col-sm-5'>
+        	
+        		<div class='form-group no-margin-bottom'>
+            		
+            		<label class='control-label' for='sponsor_signature'>
+              			Signature of Authorised Representative of Sponsor
+              			<small class='normal-font-weight'>
+                			(Type your full name)
+              			</small>
+            		</label>
+
+					<input class='input-lg form-control' id='sponsor_signature' name='ics[sponsor_signature]' type='text' value="Andrew Veasey">
+					<!--<input class='input-lg form-control' id='sponsor_signature' name='ics[sponsor_signature]' type='text' value="{{params['sponsor_signature']}}">-->
+					<!--<input class=' date form-control' name='ics[signature_date]'   type='text' placeholder="DD/MM/YYYY" value="   /   /      ">	-->	
+        		</div>
+        		
+        	   	<div class='form-group no-margin-bottom'>
+            		<label class='control-label' for='signature'>
+              
+                		Date
+              
+            		</label>
+            		<input class='date form-control' name='ics[sponsor_signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">
+          		</div>
+        		
+        		<div class="form-group no-margin-bottom">
+        			<label class='control-label' for='sponsor_position'>
+        				Position
+        			</label>
+        			<input readonly='' class='form-control' id='sponsor_position' name='ics[sponsor_position]' type='text' value="Strategy and Operations Manager">
+				</div>
+				
+				<div class="form-group no-margin-bottom">
+        			<label class='control-label' for='sponsor_last_name'>
+        				Last Name
+        			</label>
+        			<input readonly='' class='form-control' id='sponsor_last_name' name='ics[sponsor_last_name]'  type='text' value="Veasey">
+				</div>
+				            <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+				
+				<div class="form-group no-margin-bottom">
+        			<label class='control-label' for='sponsor_First_name'>
+        				First Name
+        			</label>
+        			<input readonly='' class='form-control' id='sponsor_First_name' name='ics[sponsor_First_name]'  type='text' value="Andrew">
+        			<label class='small control-label' for='sponsor_initials'>
+        				Initials
+        			</label>
+        			<input readonly='' class='area_code form-control' id='sponsor_initials' maxlength='2' name='ics[sponsor_initials]' type='text' value="AV">
+				</div>
+
+				
+				<div class="form-group">
+        			<label class='control-label' for='sponsor_phone'>
+        				Phone Number
+        			</label>
+        			<input readonly='' class='form-control' id='sponsor_phone' name='ics[sponsor_phone]'  type='text' value="0455 838 777">
+				</div>
+        				
+        	
+        </fieldset>
+      </p>
+    </div>
+	</div>
+    <!-- spacer -->
+          
+
+    <!-- end spacer -->
+        
+    <h3>
+      Item 6 - Cadet Certification
+    </h3>
+    <hr>
+    <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+      <p>
+        <strong>
+          I certify that:
+        </strong>
+        <ul>
+          <li>
+            I have checked my details at Item 2, and the details of the Cadetship Plan at Item 3 and certify that to the best of my knowledge that they are true and complete;
+          </li>
+          <li>
+            I have read and understand the 'Terms and Conditions', particularly the Cadet obligations, that apply to this Agreement;
+          </li>
+          <li>
+            I agree to abide by the 'Terms and Conditions' of this Agreement;
+          </li>
+          <li>
+            I am of Aboriginal and/or Torres Strait Islander descent; identify as an Australian Aboriginal and/or Torres Strait Islander; and am accepted as an Aboriginal and/or Torres Strait Islander in the community I live or have lived.
+          </li>
+          <li>
+            I am an Australian resident;
+          </li>
+          <li>
+            I am enrolled for full-time study for my diploma, my advanced diploma or my first undergraduate degree at a TAFE college, or other registered training organisation or university;
+          </li>
+          <li>
+            I am aware that under the Criminal Code Act 1995 (Cth) section 137.1 giving false or misleading information is a serious offence;and
+          </li>
+          <li>
+            I undertake to advise Centrelink of the Cadetship, and the proposed commencement date of the Cadetship as outlined in Item 3 if I am receiving any payments from Centrelink, including ABSTUDY.
+          </li>
+        </ul>
+        <fieldset class='col-sm-5'>
+          <div class='form-group no-margin-bottom'>
+            <label class='control-label' for='signature'>
+              Signature of Cadet or Authorised Representative
+              <small class='normal-font-weight'>
+                (Type your full name)
+              </small>
+            </label>
+            <input class='form-control' id='signature' name='ics[signature]' required='' type='text' value="{{params['signature']}}">
+            <!--<input class='date form-control' name='ics[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">-->
+          </div>
+          
+        	<div class='form-group no-margin-bottom'>
+            	<label class='control-label' for='signature'>
+              
+                	Date
+              
+            	</label>
+            	<input class='date form-control' name='ics[signature_date]'  type='text' placeholder="DD/MM/YYYY" value="{{params['signature_date']}}">
+          	</div>
+        </fieldset>
+      </p>
+    </div>
+    
+    <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        <div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+    <h3>
+      Item 7 - Financial Assistance To Be Paid
+    </h3>
+    <hr>
+    <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+      <p>
+        The Commonwealth will make an advance payment to the Sponsor up to $14,100 (including GST) per annum with an advance payment being made each semester for the Cadet’s study salary for 40 weeks, plus other items specified  in Clause 5 of the ‘Terms and Conditions’ while the cadet is attending full-time study.
+      </p>
+    </div>
+    
+        <!-- spacer -->
+      
+
+    <!-- end spacer -->
+    <div class='hide-form'>
+    <h3>
+    Item 8 - Checklist
+    </h3>
+    <hr>
+    <div class='col-sm-12 light-background padded-top padded-bottom bottom-margin-medium'>
+    	<p>It is a requirement that the following documents are supplied with this application for the Agreement to be processed:
+        	<fieldset>
+  				<div class="checkbox">
+    				<label>
+      					Position Description/Duty Statement of Cadetship (described at Annexure 1) attached<input checked='' type="checkbox"> 
+    				</label>
+  				</div>
+  			
+  				<div class="checkbox">
+    				<label>
+      					Confirmation of Indigenous Status (described at Annexure 3(a)) attached<input checked='' type="checkbox"> 
+    				</label>
+  				</div>
+  			
+  				<div class="checkbox">
+    				<label>
+      					Confirmation of Enrolment (described at Annexure 3(b)) attached<input checked='' type="checkbox"> 
+    				</label>
+  				</div>
+
+        	</fieldset>
+        </p>
+    </div>
+    
+    <h3>
+       Office Use Only
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+    	<fieldset>
+    		<div class=' form-group '>
+            		<label class='col-sm-5 control-label' for='commencement_date'>
+            		<h4>
+            			Department Recommendation
+            		</h4>
+            		</label>
+        	</div>
+        	
+    		<div class=' form-group '>
+            		
+            		<label class='col-sm-5 control-label' for='commencement_date'>
+            			Cadetship commencement date &nbsp;&nbsp;&nbsp;&nbsp;     
+            		</label>
+            	 	<div class='col-sm-5'>
+            				<input class='date form-control' name='ics[commencement_date]' type='text' value='         /         /      '>
+          			</div>
+        	</div>
+        	
+        	
+        		<div class='form-group '>
+            		
+            		<label class=' col-sm-5 control-label' for='cessation_date'>
+            			Cadetship expected cessation date
+            		</label>
+					<div class='col-sm-5'>
+            				<input class='date form-control' name='ics[cessation_date]' type='text' value='         /         /      '>
+          			</div>	
+        		</div>
+        		<div class="form-group no-margin-bottom">
+        			<label class='col-sm-3 control-label' for='office_signature'>
+        				Signed: 
+        			</label>
+        			<div class='col-sm-6'>
+        				<input  class='  form-control' id='office_signature' name='ics[office_signature]'  type='text' value="">
+					</div>
+				</div>
+	            
+
+				<div class="form-group no-margin-bottom">
+        			<label class='col-sm-3 control-label' for='office_name'>
+        				Name
+        			</label>
+        			<div class='col-sm-6'>
+        				<input  class='form-control' id='office_name' name='ics[office_name]' type='text' value="">
+					</div>
+				</div>
+				
+				<div class="form-group no-margin-bottom">
+        			<label class=' col-sm-3 control-label' for='office_title'>
+        				Title
+        			</label>
+        			<div class='col-sm-6'>
+        				<input class='form-control' id='office_title' name='ics[office_title]'  type='text' value="">
+        			</div>
+				</div>
+
+				<div class='form-group hide-form'>
+          			<label class='col-sm-3 control-label' for='blank_space'>
+          			</label>
+          			<div class='col-sm-5'>
+          			</div>
+        </div>
+        
+				<div class='form-group '>
+            		<label class='col-sm-5 control-label' for='office_sign_date'>
+            			Date
+            		</label>
+            		<div class='col-sm-5'>
+					<input class=' date form-control' name='ics[office_sign_date]'  type='text' placeholder="DD/MM/YYYY"  value='         /         /      '>		
+        			</div>
+        		</div>
+      </fieldset>
+    </div> 
+
+    
+    <h3>
+       Department Approval of Expenditure and execution of Agreement
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+    	<fieldset>
+		
+        		<div class="form-group no-margin-bottom">
+        			<label class='col-sm-3 control-label' for='expenditure'>
+        				Expenditure of up to
+        				<small class='normal-font-weight'>
+        			        (Including GST)
+              			</small> 
+        			</label>
+        			<div class='col-sm-6'>
+        				<input  class='  form-control' id='expenditure' name='ics[expenditure]'  type='text' value="$">
+        				
+					</div>
+					 
+				</div>
+        		<!--
+        		<div class=' form-group '>
+            		
+            		<label class='col-sm-5 control-label' for='sponsor_signature'>
+            			Expenditure of up to
+                      <small class='normal-font-weight'>
+        			        (Including GST)
+              			</small> 
+            		</label>
+            	 	<div class='col-sm-5'>
+            				<input class='form-control' name='ics[cadet_commence_date]' type='text' value='$ '>
+          			</div>
+        		</div>
+        		-->
+        		<div class="form-group ">
+        			<label class='col-sm-3 control-label' for='sponsor_position'></label>
+        			<div class='col-sm-6'>
+        				<p class='' >Funds under Section 44 of the Financial Mangement and Accountability Act of 1997 is approved.</p>
+        			</div>
+        		</div>
+ 
+        		<div class="form-group no-margin-bottom">
+        			<label class='col-sm-3 control-label' for='signature_of_delegate'>
+        				Signature of Delegate 
+        			</label>
+        			<div class='col-sm-6'>
+        				<input  class='  form-control' id='signature_of_delegate' name='ics[signature_of_delegate]'  type='text' value="">
+					</div>
+				</div>
+	            
+
+				<div class="form-group no-margin-bottom">
+        			<label class='col-sm-3 control-label' for='department_name'>
+        				Printed Name
+        			</label>
+        			<div class='col-sm-6'>
+        				<input  class='form-control' id='department_name' name='ics[department_name]' type='text' value="">
+					</div>
+				</div>
+				
+				
+				
+				<div class="form-group no-margin-bottom">
+        			<label class=' col-sm-3 control-label' for='department_position'>
+        				Position
+        			</label>
+        			<div class='col-sm-6'>
+        				<input class='form-control' id='department_position' name='ics[department_position]'  type='text' value="">
+        			</div>
+				</div>
+
+				
+				<div class='form-group'>
+            		
+            		<label class='col-sm-5 control-label' for='department_approval_sign_date'>
+            			Date
+            		</label>
+            		<div class='col-sm-5'>
+					<input class=' date form-control' name='ics[department_approval_sign_date]' type='text' placeholder="DD/MM/YYYY" value='         /         /      '>		
+        			</div>
+        		</div>
+      </fieldset>
+    </div> 
+    
+        
+    <h3>
+       ES Smart Client
+    </h3>
+    <hr>
+    <div class='light-background padded-top padded-bottom'>
+    	<fieldset>
+       		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='provider_id_1'>Provider ID</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='ics_id digit-box form-control' id='provider_id_1' maxlength='1' name='ics[provider_id_1]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_2' maxlength='1' name='ics[provider_id_2]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_3' maxlength='1' name='ics[provider_id_3]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_4' maxlength='1' name='ics[provider_id_4]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_5' maxlength='1' name='ics[provider_id_5]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_6' maxlength='1' name='ics[provider_id_6]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_7' maxlength='1' name='ics[provider_id_7]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_8' maxlength='1' name='ics[provider_id_8]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_9' maxlength='1' name='ics[provider_id_9]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='provider_id_10' maxlength='1' name='ics[provider_id_10]'  type='text'>
+            			</div>
+            			<div class='add-on'></div>
+          			</div>
+       			 </div>
+        		
+        		<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='project_id_1'>Project/Activity ID</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='ics_id digit-box form-control' id='project_id_1' maxlength='1' name='ics[project_id_1]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_2' maxlength='1' name='ics[project_id_2]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_3' maxlength='1' name='ics[project_id_3]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_4' maxlength='1' name='ics[project_id_4]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_5' maxlength='1' name='ics[project_id_5]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_6' maxlength='1' name='ics[project_id_6]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_7' maxlength='1' name='ics[project_id_7]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_8' maxlength='1' name='ics[project_id_8]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_9' maxlength='1' name='ics[project_id_9]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='project_id_10' maxlength='1' name='ics[project_id_10]'  type='text'>
+            			</div>
+            			<div class='add-on'></div>
+          			</div>
+       			 </div>
+	            
+
+				<div class='form-group'>
+          			<label class='col-sm-3 control-label' for='jobseeker_id_1'>Jobseeker ID</label>
+          			<div class='col-sm-5'>
+            			<div class='input-group'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_1' maxlength='1' name='ics[jobseeker_id_1]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_2' maxlength='1' name='ics[jobseeker_id_2]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_3' maxlength='1' name='ics[jobseeker_id_3]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_4' maxlength='1' name='ics[jobseeker_id_4]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_5' maxlength='1' name='ics[jobseeker_id_5]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_6' maxlength='1' name='ics[jobseeker_id_6]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_7' maxlength='1' name='ics[jobseeker_id_7]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_8' maxlength='1' name='ics[jobseeker_id_8]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_9' maxlength='1' name='ics[jobseeker_id_9]'  type='text'>
+              				<input class='ics_id digit-box form-control' id='jobseeker_id_10' maxlength='1' name='ics[jobseeker_id_10]'  type='text'>
+            			</div>
+            			<div class='add-on'></div>
+          			</div>
+       			 </div>
+				
+				
+   
+        
+      </fieldset>
+    </div> 
+    </div>
+    <div class='row'>
+      <div class='col-sm-12'>
+        <div class='form-group'>
+          <div class='col-sm-2 pull-right'>
+            <button class='btn orange-button' type='button' VALUE="Back" onClick="history.go(-1);return true;">Back</button>
+            <button class='btn orange-button' type='submit'>Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  </form>
+</div>
+{% endblock %}
+{% block javascripts %}
+<script>
+  $(document).ready(function() {
+    var metrics = [
+                    [ "[name='ics[last_name]']", 'presence', 'Last name is required and cannot be empty' ],
+                    [ "[name='ics[first_name]']", 'presence', 'First name is required and cannot be empty' ],
+                    [ "[name='ics[dob]']", 'presence', 'Date of birth is required and cannot be empty' ],
+                    [ "[name='ics[dob]']", /|(0[1-9]|[12][0-9]|3[01])[\/.](0[1-9]|1[012])[\/.](19|20)\d\d/, 'Invalid date format. Should be dd/mm/yyyy' ],
+                    [ "[name='ics[cadetship_date]']", 'presence', 'Proposed commencement date of Cadetship is required and cannot be empty' ],
+                    [ "[name='ics[graduation_date]']", 'presence', 'Expected University Graduation date is required and cannot be empty' ],
+                    [ "[name='ics[advisor_full_name]']", 'presence', 'Student Advisor full name is required and cannot be empty' ],
+                    [ "[name='ics[advisor_email_address]']", 'presence', 'Student Advisor email address is required and cannot be empty' ],
+                    [ "[name='ics[advisor_email_address]']", 'email', 'Invalid email address' ],
+                    [ "[name='ics[advisor_contact_business]']", 'presence', 'Business hours phone number is required' ],
+                    [ "[name='ics[advisor_contact_mobile]']", 'presence', 'Mobile phone number is required' ],
+                    [ "[name='ics[email]']", 'presence', 'Email address is required and cannot be empty' ],
+                    [ "[name='ics[email]']", 'email', 'Invalid email address' ],
+                    [ "[name='ics[gender]']", 'presence', 'Please choose one of the following' ],
+                    [ "[name='ics[descent]']", 'presence', 'Please choose one of the following' ],
+                    [ "[name='ics[signature]']", 'presence', 'Signature is required and cannot be empty' ],
+                    [ "[name='ics[signature_date]']", 'presence', 'Signature date is required and cannot be empty' ],
+                    [ "[name='ics[educational_institution]']", 'presence', 'Educational institution is required and cannot be empty' ],
+                    [ "[name='ics[enrolment_status]']", 'presence', 'Enrolment status is required and cannot be empty' ],
+                    [ "[name='ics[course]']", 'presence', 'Course of study is required and cannot be empty' ],
+                    [ "[name='ics[campus_location]']", 'presence', 'Campus location is required and cannot be empty' ],
+                    [ "[name='ics[faculty_post_4]']", 'presence', 'Faculty postcode is required and cannot be empty' ],
+                    [ "[name='ics[home_phone]'], [name='ics[fax]'], [name='ics[mobile]']", 'one-of', 'Please enter at least one contact number' ],
+                    [ "[name='ics[residential_address_1]'], [name='ics[residential_address_3]']", 'presence', 'Residential address is required and cannot be empty' ],
+                    [ "[name='ics[residential_post_4]']", 'presence', 'Residential address is required and cannot be empty' ],
+                    [ "[name='ics[faculty_address_1]'], [name='ics[faculty_address_2]'], [name='ics[faculty_address_3]']", 'presence', 'Faculty address is required and cannot be empty' ],
+                  ];
+  
+    $( "form" ).nod( metrics , {
+                      groupSelector: ".form-group", 
+                      groupClass: "has-error", 
+                      helpSpanDisplay: "help-block small"
+    });
+    
+    
+    });
+    
+  
+  
+
+</script>
+{% endblock %}

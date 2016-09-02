@@ -1,0 +1,24 @@
+---
+- Maria Derbedrossian:
+    _slug: maria-derbedrossian
+    stream: Mid-Career Stream
+    participant_stream: Refugee from Syria
+    company: Telstra
+    image: ../images/samples/stories/maria-derbedrossian/profile_maria_derbedrossian.png
+    youtube_video_url: https://www.youtube.com/watch?v=r4CpSCp-zDo
+
+- Nawar Shamaya:
+    _slug: nawar-shamaya
+    stream: Mid-Career Stream
+    participant_stream: Refugee from Iraq
+    company: NSW Department of Primary Industries
+    image: ../images/samples/stories/nawar-shamaya/profile_Nawar_Shamaya.png
+    youtube_video_url: https://www.youtube.com/embed/2TWzeDvqqQk
+
+- Hafiza Nejati:
+    _slug: hafiza-nejati
+    stream: Student Stream (RMIT University)
+    participant_stream: Refugee from Afghanistan
+    company: Insurance Australia Group
+    image: ../images/samples/stories/hafiza-nejati/profile_Hafiza_Nejati.png
+    youtube_video_url: https://www.youtube.com/watch?v=e2Sbm1qKEfQ

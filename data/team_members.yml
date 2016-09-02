@@ -1,0 +1,43 @@
+---
+- Michael Combs:
+    _slug: michael-combs
+    position: Founder & CEO
+    email: michael.combs@careertrackers.org.au
+    image: /samples/team_members/michael-combs/profile-michael-combs.jpg
+    location: the-national-team
+    description:
+
+- Ash Nugent:
+    _slug: ash-nugent
+    position: Deputy CEO
+    email: ash.nugent@careerseekers.org.au
+    phone: 0447 432 303
+    image: /samples/team_members/ash-nugent/profile-ash-nugent.jpg
+    location: the-national-team
+    description:
+
+- Lynn Anderson:
+    _slug: lynn-anderson
+    position: Program Director
+    email: lynn.anderson@careerseekers.org.au
+    phone: 0447 456 643
+    image: /samples/team_members/lynn-anderson/profile-lynn.jpg
+    location: the-national-team
+    description:
+
+- Milca Villarrubia:
+    _slug: milca-villarrubia
+    position: Executive Assistant
+    email: milca@careerseekers.org.au
+    phone: 0427 251 574
+    image: /samples/team_members/milca-villarrubia/profile-milca.jpg
+    location: the-national-team
+    description:
+
+- Hiba Nasee:
+    _slug: hiba-nasee
+    position: Intern
+    email: hiba.nasee@careerseekers.org.au
+    image: /samples/team_members/hiba-nasee/profile-hiba.jpg
+    location: the-national-team
+    description:

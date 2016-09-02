@@ -1,0 +1,24 @@
+---
+- Macquarie:
+    _slug: macquarie
+    image: /samples/companies/Macquarie/macquarie.png
+
+- DLA:
+    _slug: DLA
+    image: /samples/companies/DLA/dla.png
+
+- HSF:
+    _slug: HSF
+    image: /samples/companies/HSF/hsf.png
+
+- Lend_Lease:
+    _slug: Lend_Lease
+    image: /samples/companies/Lend_Lease/lend_lease.png
+
+- GHD:
+    _slug: GHD
+    image: /samples/companies/GHD/ghd.png
+
+- CFS:
+    _slug: CFS
+    image: /samples/companies/CFS/cfs.png

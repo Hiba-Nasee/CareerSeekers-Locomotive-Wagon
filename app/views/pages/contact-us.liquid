@@ -1,0 +1,82 @@
+---
+title: Contact Us
+slug: contact-us
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 7
+seo_title: Contact Us
+editable_elements:
+  main/content:
+
+---
+{% extends parent %}
+{% block main %}
+{% include banner %}
+<div class='container-fluid'>
+
+  {% include page_header %}
+  <div class='col-md-5'>
+    <p>
+      <div class="email">
+        <i class='fa fa-envelope'></i>
+            <a href="mailto:info@careerseekers.org.au"><i class="mail large square icon"></i>info@careerseekers.org.au</a>
+          </div>
+
+      {% for contact_us in contents.contact_us %}
+      <h3>{{contact_us.location}}</h3>
+      <ul class='list-unstyled contact inherit-font-size'>
+        {% if contact_us.address %}
+        <li>
+          <span class='contact_address'>
+            {{contact_us.address}}
+          </span>
+        </li>
+        {% endif %}
+        {% if contact_us.phone %}
+        <li class='contact_phone padded-top-small'>
+
+          <a href='tel:{{contact_us.phone}}'>
+            {{contact_us.phone}}
+          </a>
+        </li>
+        {% endif %}
+        {% if contact_us.email %}
+        <li class='contact_email padded-top-small'>
+
+          <a href='mailto:{{contact_us.email}}'>
+            {{contact_us.email}}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:250px;width:550px;'>
+        <div id='{{map_id}}' style='height:250px;width:550px;'>
+        </div>
+        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+      </div>
+      <script type='text/javascript'>
+        function init_map(){
+
+          var myOptions = {zoom:17,center:new google.maps.LatLng({{latitude}}), mapTypeId: google.maps.MapTypeId.ROADMAP};
+          map = new google.maps.Map(document.getElementById('{{map_id}}'),myOptions);
+          marker = new google.maps.Marker({map: map,position: new google.maps.LatLng({{latitude}})});
+          infowindow = new google.maps.InfoWindow({content:'{{description}}'});
+          google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+          infowindow.open(map,marker);
+        }
+       google.maps.event.addDomListener(window, 'load', init_map);
+       </script>
+
+      <br>
+    </p>
+  </div>
+  <div class="col-md-7">
+    
+  </div>
+
+</div>
+{% endblock %}

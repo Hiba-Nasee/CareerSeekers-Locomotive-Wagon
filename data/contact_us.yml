@@ -1,0 +1,14 @@
+---
+
+- Sydney:
+    _slug: sydney
+    address: Suite 1, Level 5 / 309 George Street, Sydney, NSW 2000
+     map_id: gmap_canvas1
+     latitude: -33.8661568,151.20696040000007
+     description: <strong>CareerSeekers Sydney Office</strong><br>309 George Street, Sydney, NSW 2000<br>
+- Melbourne:
+    _slug: melbourne
+    address: Suite 8, Level 7 / 350 Collins Street, Melbourne, VIC 3000
+     map_id: gmap_m
+     latitude: -37.8161054,144.9627163
+     description: <strong>CareerSeekers Melbourne Office</strong><br>350 Collins Street, Melbourne, VIC 3000<br>

@@ -1,0 +1,55 @@
+---
+- Accor:
+    _slug: accor
+    image: /samples/companies/accor/accorplus.png
+- CBA:
+    _slug: cba
+    image: /samples/companies/cba/cba.png
+- City Of Sydney:
+    _slug: city-of-sydney
+    image: /samples/companies/city-of-sydney/City of Sydney.png
+- DPI:
+    _slug: dpi
+    image: /samples/companies/dpi/dpi.png
+- Ericsson:
+    _slug: ericsson
+    image: /samples/companies/ericsson/Ericsson.png
+- First State Super:
+    _slug: first-state-super
+    image: /samples/companies/first-state-super/First State Super.png
+- GetUp:
+    _slug: get-up
+    image: /samples/companies/get-up/GetUp.png
+- HDY:
+    _slug: hdy
+    image: /samples/companies/hdy/HDY.png
+- IAG:
+    _slug: iag
+    image: /samples/companies/iag/IAG.png
+- DPE:
+    _slug: dpe
+    image: /samples/companies/dpe/DPE.png
+- PwC:
+    _slug: pwc
+    image: /samples/companies/pwc/PwC.png
+- Seals:
+    _slug: energy-development-ltd
+    image: /samples/companies/seals/SEALS.png
+- SJB:
+    _slug: sjb
+    image: /samples/companies/sjb/SJB.png
+- Telstra:
+    _slug: telstra
+    image: /samples/companies/telstra/Telstra.png
+- UniSuper:
+    _slug: uni-super
+    image: /samples/companies/uni-super/UniSuper.png
+- DHHS:
+    _slug: dhhs
+    image: /samples/companies/dhhs/DHHS.png
+- Westpac:
+    _slug: westpac
+    image: /samples/companies/westpac/Westpac.png
+- 3 Bridges:
+    _slug: 3-bridges
+    image: /samples/companies/3-bridges/3 Bridges.png

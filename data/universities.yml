@@ -1,0 +1,13 @@
+---
+- Deakin:
+    _slug: deakin
+    image: /samples/universities/deakin/Deakin.png
+- La Trobe:
+    _slug: la-trobe
+    image: /samples/universities/la-trobe-uni/La_Trobe_Uni.png
+- RMIT:
+    _slug: rmit
+    image: /samples/universities/rmit/RMIT.png
+- UTS:
+    _slug: rmit
+    image: /samples/universities/uts/UTS.png
