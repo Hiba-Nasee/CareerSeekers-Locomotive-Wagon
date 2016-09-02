@@ -30,7 +30,7 @@ fields:
     required: false
     unique: false
     localized: false
-- map_id:
+- mapid:
     label: map_id
     type: string
     required: false
